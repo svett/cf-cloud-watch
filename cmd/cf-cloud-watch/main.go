@@ -11,6 +11,7 @@ import (
 	"github.com/Sirupsen/logrus"
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"
+	"github.com/svett/cf-cloud-watch/api"
 	"github.com/svett/cf-cloud-watch/middleware"
 )
 
@@ -39,6 +40,7 @@ func main() {
 
 	// Routes configuration
 	router := mux.NewRouter()
+	router.Handle("/api/v1/deployments", &api.Bosh{})
 	server.UseHandler(router)
 
 	logrus.Printf("Server is listening on %s", addr)
