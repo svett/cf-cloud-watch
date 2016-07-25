@@ -4,8 +4,8 @@ Presently, the home page shows a dashboard of the current BOSH deployments and d
 information about them:
 
 - stemcell version
-- release verion
-- date of deployment
+- release version
+- deploy date
 
 ## Prerequisite
 
@@ -32,7 +32,7 @@ go run cmd/cf-cloud-watch/main.go
 
 ## Remaining work
 
-- the dashboard is not auto-update
+- the dashboard is not updated automatically
 - the deployments do not have good UI/UX
 
 ## License
