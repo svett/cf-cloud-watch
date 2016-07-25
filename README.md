@@ -7,17 +7,17 @@ information about them:
 - release verion
 - date of deployment
 
-# Prerequisite
+## Prerequisite
 
 - [Golang](http://golang.org/)
 
-# Installation
+## Installation
 
 ```sh
 go get github.com/svett/cf-cloud-watch/...
 ```
 
-# Running
+## Getting started
 
 Presently, the Cloudwatch works with `bosh-lite` by using the following defaults:
 
@@ -30,10 +30,14 @@ If you want to change them, you should change `bosh/bosh.go` file.
 go run cmd/cf-cloud-watch/main.go
 ```
 
-# Remaining work
+## Remaining work
 
 - the dashboard is not auto-update
 - the deployments do not have good UI/UX
+
+## License
+
+**[MIT License](https://github.com/svett/cf-cloud-watch/blob/master/LICENSE)**
 
 
 
